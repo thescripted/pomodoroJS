@@ -1,5 +1,5 @@
-const INITIAL_TIME = 700; // 1500 seconds = 25 minutes
-const SECONDS = 50; // Develop purposes only. 1000 ms
+const INITIAL_TIME = 2500; // 1500 seconds = 25 minutes
+const SECONDS = 1000; // Develop purposes only. 1000 ms
 
 function formatToTimeString(timeSeconds) {
   let minutes = Math.floor(timeSeconds / 60);
