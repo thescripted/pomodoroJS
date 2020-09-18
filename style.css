@@ -1,0 +1,35 @@
+.body {
+  padding: 80px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.playScreen {
+  background: #983628;
+  color: white;
+}
+
+.pauseScreen {
+  background: #12664f;
+  color: white;
+}
+
+.button {
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  background: #ccc;
+  padding: 12px 20px;
+  transition: background 0.2s;
+  color: black;
+}
+
+.timer {
+  font-size: 60px;
+}
+.button:hover {
+  background: #ddd;
+}
