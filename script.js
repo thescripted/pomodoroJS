@@ -1,24 +1,12 @@
-const INITIAL_TIME = 1500; // 1500 seconds = 25 minutes
-const SECONDS = 1000; // Develop purposes only. 1000 ms
+const INITIAL_TIME = 700; // 1500 seconds = 25 minutes
+const SECONDS = 50; // Develop purposes only. 1000 ms
 
 function formatToTimeString(timeSeconds) {
   let minutes = Math.floor(timeSeconds / 60);
   let seconds = timeSeconds % 60;
-
-  function padded(time) {
-    return '0' + time;
-  }
-
-  if (seconds < 10) {
-    seconds = padded(seconds);
-  }
-
-  if (minutes < 10) {
-    minutes = padded(minutes);
-  }
-
-  const formatted = minutes + ':' + seconds;
-  return formatted;
+  seconds = seconds < 10 ? '0' + seconds : seconds;
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  return `${minutes}:${seconds}`;
 }
 // Called by Timer to update the DOM
 function renderTime(time) {
