@@ -41,8 +41,6 @@ class Timer {
     this.running = false;
     clearInterval(this.ticker);
     clearTimeout(this.timeout);
-    this.ticker = undefined;
-    this.timeout = undefined;
     renderTime(this.clock);
   }
 
